@@ -9,28 +9,28 @@
 std::string pathFinder(std::string s)
 {
 std::string fldr,file;
-int someNumbr=0;
+int tmpNum=0;
 std::stringstream ss;
 char flttr,slttr;
 flttr=s[0];
 slttr=s[1];
 
 ss << static_cast<int>(flttr);
-someNumbr=std::stoi(ss.str());
+tmpNum=std::stoi(ss.str());
 ss.str(std::string());
 ss.clear();
-someNumbr-= 96;
-ss<<someNumbr;
+tmpNum-= 96;
+ss<<tmpNum;
 fldr=ss.str();
 
 ss.str(std::string());
 ss.clear();
 ss << static_cast<int>(slttr);
-someNumbr=std::stoi(ss.str());
+tmpNum=std::stoi(ss.str());
 ss.str(std::string());
 ss.clear();
-someNumbr-= 96;
-ss<<someNumbr;
+tmpNum-= 96;
+ss<<tmpNum;
 file=ss.str();
 
 ss.str(std::string());
@@ -46,11 +46,9 @@ return ss.str();
 
 int main()
 {
-int anagrmzFound=0;
-bool anagrmFound=false;
-bool anagrm0Flg=false;
-bool blkListChk=false;
-
+bool anagrmFound=false,anagrm0Flg=false,blkListChk=false;
+//bool anagrm0Flg=false;
+//bool blkListChk=false;
 std::ifstream finPool,finPermut;
 
 std::stringstream anagramsTmp;
