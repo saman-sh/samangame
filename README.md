@@ -11,7 +11,7 @@ First, make a new folder and copy the files into it and give permission to them 
 This might take few minutes depending on speed of your system.
 Second, compile the c++ code (Anagrams.cpp) note that c++11 should be available on your system, type this command on the terminal:
 $ g++ Anagrams.cpp -std=c++11
-then just run the executable (a.out).
+then just run the executable (a.out) the final result (list of maximum 8 letter anagrams in English dictionary) will be available in a text file (Anagrams.txt).
 
 Requirements:
 * Ubuntu (or any Linux distro).
@@ -22,4 +22,4 @@ Note:
 Preparion script actually is for indexing the dictionary (based on first two letters) to make search and comparison faster.
 
 Future work:
-Using Pthread library in c++ code to make it run faster.
+Using thread library in c++11 to make program run faster.
