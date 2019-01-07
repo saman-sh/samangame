@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 
-std::string pathFinder(std::string s)
+inline std::string pathFinder(std::string s)
 {
 std::string fldr,file;
 int tmpNum=0;
@@ -71,8 +71,7 @@ finPool.open("DictionaryMain.txt");
 
 while(std::getline(finPool,src))
 {
-
-if(src!="" && src.length()>2 && src.length()<9)
+if(src.length()>2 && src.length()<10)
 {
 
  for(int t=0;t<blkList.size();++t)
