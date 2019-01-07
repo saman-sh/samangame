@@ -1,6 +1,6 @@
 # samangame
 [online brain/mind games]
-In this package there is a bash sript and a c++ program that I wrote to generate a list of all possible anagrams (in this code maximum of 8 letter words because of my CPU limitaions but it can be changed in code) in English dictionary (or any other language if dictionary provided).
+In this package there is a bash sript and a c++ program that I wrote to generate a list of all possible anagrams (in this code maximum of 9 letter words because of my CPU limitaions but it can be changed in code) in English dictionary (or any other language if dictionary provided).
 I used this word list as my dataset: An English Word List by John M. Lawler [http://www-personal.umich.edu/~jlawler/wordlist.html].
 
 Operating system:
@@ -11,7 +11,7 @@ First, make a new folder and copy the files into it and give permission to them 
 This might take few minutes depending on speed of your system.
 Second, compile the c++ code (Anagrams.cpp) note that c++11 should be available on your system, type this command on the terminal:
 $ g++ Anagrams.cpp -std=c++11
-then just run the executable (a.out) the final result (list of maximum 8 letter anagrams in English dictionary) will be available in a text file (Anagrams.txt).
+then just run the executable (a.out) the final result (list of maximum 9 letter anagrams in English dictionary) will be available in a text file (Anagrams.txt).
 
 Requirements:
 * Ubuntu (or any Linux distro).
