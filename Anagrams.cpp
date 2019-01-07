@@ -72,7 +72,7 @@ finPool.open("DictionaryMain.txt");
 while(std::getline(finPool,src))
 {
 
-if(src!="" && src.length()>2 && src.length()<10)
+if(src.length()>2 && src.length()<10)
 {
 
  for(int t=0;t<blkList.size();++t)
